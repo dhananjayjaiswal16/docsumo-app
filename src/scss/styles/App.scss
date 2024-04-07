@@ -1,0 +1,10 @@
+@import '../variables/variables.scss';
+body{
+  background-color: $app-bg-color;
+  padding: 10px 40px;
+}
+.loading-style{
+  display: block;
+  margin: auto;
+  width: 150px;
+}

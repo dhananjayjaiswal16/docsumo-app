@@ -1,0 +1,21 @@
+@import "../variables/variables.scss";
+
+.forecastContainer{
+  background-color: rgb(82, 228, 184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  border-radius: 10px;
+  img{
+    width: 100%;
+  }
+  p{
+    margin: 6px 0px;
+    text-align: center;
+  }
+  @media(max-width: 768px){
+    margin: 12px 15px;
+  }
+}

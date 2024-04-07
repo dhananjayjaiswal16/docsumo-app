@@ -1,0 +1,104 @@
+@import "../variables/variables.scss";
+
+.weatherPage {
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-family: $main-font;
+  align-items: center;
+  top: 220px; right: 0;
+  color: $white;
+  .cityWeather{
+    background-color: $secondary-color;
+    width: 75%;
+    border-radius: 50%;
+    display: flex;
+    .left{
+      padding: 30px 20px;
+      flex: 8;
+      background-color: $secondary-color;
+      .topBarContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .weatherDetailsContainer{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          img{
+            width: 100px;
+          }
+          h1{
+            font-size: 30px;
+          }
+        }
+      }
+      h1{
+        margin: 25px 0px;
+        font-size: 70px;
+        span{
+          font-size: 25px;
+        }
+      }
+      .weatherDetails{
+        margin-top: 15px;
+        span{
+          margin: 0px 5px;
+        }
+      }
+      .forecast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 40px;
+        grid-gap: 20px;
+        @media(max-width: 768px){
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media(max-width: 768px){
+        padding: 0px 20px;
+      }
+    }
+    .right {
+      flex: 5;
+      padding: 30px 20px;
+      background-color: rgb(14, 131, 139);
+      .cityNameContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cityNameContainer-left{
+          display: flex;
+          h4{
+            margin: 0;
+            margin-left: 10px;
+          }
+        }
+        .plus-icon{
+          background-color: rgb(90, 218, 211);
+          padding: 4px 7px;
+          border-radius: 50%;
+        }
+      }
+      .sunrise-sunset{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      hr{
+        width: 100%;
+        margin: 40px 0px;
+        border-top: none;
+      }
+      .details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media(max-width: 850px){
+      flex-direction: column;
+      width: 85vw;
+    }
+  }
+}

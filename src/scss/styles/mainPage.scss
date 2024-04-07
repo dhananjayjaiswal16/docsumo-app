@@ -1,0 +1,49 @@
+@import "../variables/variables.scss";
+.topBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .searchBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    padding: 3px 10px;
+    margin-right: 15px;
+    border-radius: 10px;
+    i{
+      cursor: pointer;
+      color: rgb(105, 105, 105);
+    }
+    input {
+      @include inputStyle($white);
+    }
+    @media(max-width: 768px){
+      flex: 2;
+    }
+  }
+  @media(max-width: 768px){
+    flex-direction: column;
+  }
+}
+button {
+  border-radius: 5px;
+  margin: 7px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: $transition;
+  color: $white;
+  background-color: $primary-color;
+  border: none;
+  &:hover{
+    background-color: $secondary-color;
+  }
+  @media(max-width: 768px){
+    flex: 1;
+  }
+}

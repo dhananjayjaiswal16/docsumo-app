@@ -1,0 +1,22 @@
+@import "../variables/variables.scss";
+.errorContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  h1{
+    @media(max-width: 768px){
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+  color: rgb(1, 99, 99);
+  button{
+    padding: 10px;
+    font-size: 18px;
+  }
+  .link{
+    text-decoration: none;
+    color: inherit;
+  }
+}

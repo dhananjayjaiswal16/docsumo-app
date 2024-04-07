@@ -1,0 +1,25 @@
+//COLOR
+$white: rgb(255, 255, 255);
+$primary-color: rgb(0, 189, 189);
+$secondary-color: #009696;
+$app-bg-color: rgb(163, 255, 235);
+$danger: rgb(240, 0, 0);
+
+//FONT
+$main-font: Arial, Helvetica, sans-serif;
+
+//TRANSITION
+$transition: ease-in-out 0.3s;
+
+//INPUT
+@mixin inputStyle($bgColor){
+  width: 100%;
+    font-family: $main-font;
+    background-color: $bgColor;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 3px;
+    &:focus{
+      outline: none !important;
+    }
+}

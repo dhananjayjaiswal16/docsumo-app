@@ -1,0 +1,11 @@
+@import "../variables/variables.scss";
+
+.detailsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p{
+    margin: 7.5px 0;
+  }
+}
